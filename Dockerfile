@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 COPY package*.json /usr/src/app/
 RUN npm install
 RUN npm config set unsafe-perm true
-RUN npm install -g @angular/cli:latest
+RUN npm install -g @angular/cli
 
 # add app
 COPY . /usr/src/app

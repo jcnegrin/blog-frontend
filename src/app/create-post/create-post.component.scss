@@ -1,0 +1,18 @@
+section#create {
+  display: flex;
+  flex-direction: column;
+
+  div.text {
+    margin-bottom: 16px;
+  }
+
+  div.file {
+    margin-bottom: 16px;
+  }
+
+  div.actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

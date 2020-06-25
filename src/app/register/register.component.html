@@ -1,0 +1,23 @@
+<section id="register">
+  <mat-card class="container">
+    <mat-form-field appearance="fill">
+      <mat-label>First Name</mat-label>
+      <input matInput [formControl]="firstName">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Last Name</mat-label>
+      <input matInput [formControl]="lastName">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>E-mail</mat-label>
+      <input matInput [formControl]="email">
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input type="password" matInput [formControl]="password">
+    </mat-form-field>
+    <button mat-raised-button color="primary" (click)="signup()">Sign up</button>
+    <br>
+    <p>Do you have an account? <a routerLink="/login">Sign in</a></p>
+  </mat-card>
+</section>

@@ -1,0 +1,7 @@
+@import 'variables';
+@import 'mixins';
+
+main {
+  padding: 0 getVw(160px);
+  max-width: 100%;
+}

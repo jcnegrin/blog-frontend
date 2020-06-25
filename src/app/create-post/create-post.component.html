@@ -1,0 +1,25 @@
+<section id="create">
+  <div class="title">
+    <mat-form-field appearance="outline">
+      <mat-label>Title</mat-label>
+      <input matInput>
+    </mat-form-field>
+  </div>
+  <div class="file">
+    <p-fileUpload name="demo[]" url="./upload.php" (onUpload)="onUpload($event)"
+          multiple="false" fileLimit="1" accept="image/*" maxFileSize="1000000">
+      <ng-template pTemplate="content">
+          <ul *ngIf="uploadedFiles.length">
+              <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+          </ul>
+      </ng-template>
+    </p-fileUpload>
+  </div>
+  <div class="text">
+    <ckeditor tagName="div" [editor]="Editor" (change)="onChange($event)" data=""></ckeditor>
+  </div>
+  <div class="actions">
+    <button mat-raised-button color="primary" (click)="createPost()">CREATE</button>
+  </div>
+</section>
+

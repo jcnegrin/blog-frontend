@@ -1,0 +1,12 @@
+@import "variables";
+
+@function getVw($target) {
+    $vw-context: ($viewportWidth * 0.01);
+    @return ($target / $vw-context) * 1vw;
+  }
+  
+  @function getVh($target) {
+    $vw-context: ($viewportHeight * 0.01);
+    @return ($target / $vw-context) * 1vh;
+  }
+  

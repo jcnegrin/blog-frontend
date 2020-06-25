@@ -1,0 +1,24 @@
+<nav id="menu">
+  <div class="menu-bar">
+    <div class="logo">
+      <img src="assets/images/logo_juan@2x.svg" alt="">
+      <p><span>Juan</span> Negrin</p>
+    </div>
+    <div class="navigation">
+      <ul *ngIf="logged">
+        <li>
+          <button mat-raised-button color="primary" routerLink="/create-post">CREATE POST</button>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="navigation">
+      <ul>
+        <li routerLink="/about-me"><a routerLinkActive="active-route">About Me</a></li>
+        <li routerLink="/resume"><a routerLinkActive="active-route">Resume</a></li>
+        <li routerLink="/portfolio"><a routerLinkActive="active-route">Portfolio</a></li>
+        <li routerLink="/blog"><a routerLinkActive="active-route">Blog</a></li>
+        <li routerLink="/contact"><a routerLinkActive="active-route">Contact</a></li>
+      </ul>
+    </div> -->
+  </div>
+</nav>

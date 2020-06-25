@@ -1,0 +1,23 @@
+@import 'mixins';
+
+section#blog {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .post {
+    width: calc((100% / 2.05));
+    margin: getVh(10px) 0;
+
+    > img {
+      width: calc(100% - 20);
+      max-height: 400px;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

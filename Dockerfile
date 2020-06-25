@@ -8,7 +8,7 @@ WORKDIR /usr/src/app
 # install and cache app dependencies
 COPY package*.json /usr/src/app/
 RUN npm install
-RUN npm install -g @angular/cli
+RUN npm install -g @angular/cli:latest
 
 # add app
 COPY . /usr/src/app

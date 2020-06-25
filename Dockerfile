@@ -8,6 +8,7 @@ WORKDIR /usr/src/app
 # install and cache app dependencies
 COPY package*.json /usr/src/app/
 RUN npm install
+RUN npm config set unsafe-perm true
 RUN npm install -g @angular/cli:latest
 
 # add app

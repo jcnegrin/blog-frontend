@@ -1,34 +1,5 @@
 <section id="blog">
-  <mat-card class="post">
-    <img mat-card-image src="../../assets/images/image_4.JPEG">
-    <mat-card-title>Test</mat-card-title>
-    <mat-card-content>Test content</mat-card-content>
-    <mat-card-actions class="actions">
-      <button mat-raised-button color="primary">View</button>
-    </mat-card-actions>
-  </mat-card>
-  <mat-card class="post">
-    <img mat-card-image src="../../assets/images/image_4.JPEG">
-    <mat-card-title>Test</mat-card-title>
-    <mat-card-content>Test content</mat-card-content>
-    <mat-card-actions class="actions">
-      <button mat-raised-button color="primary">View</button>
-    </mat-card-actions>
-  </mat-card><mat-card class="post">
-    <img mat-card-image src="../../assets/images/image_4.JPEG">
-    <mat-card-title>Test</mat-card-title>
-    <mat-card-content>Test content</mat-card-content>
-    <mat-card-actions class="actions">
-      <button mat-raised-button color="primary">View</button>
-    </mat-card-actions>
-  </mat-card><mat-card class="post">
-    <img mat-card-image src="../../assets/images/image_4.JPEG">
-    <mat-card-title>Test</mat-card-title>
-    <mat-card-content>Test content</mat-card-content>
-    <mat-card-actions class="actions">
-      <button mat-raised-button color="primary">View</button>
-    </mat-card-actions>
-  </mat-card><mat-card class="post">
+  <mat-card class="post" *ngFor="let item of posts">
     <img mat-card-image src="../../assets/images/image_4.JPEG">
     <mat-card-title>Test</mat-card-title>
     <mat-card-content>Test content</mat-card-content>

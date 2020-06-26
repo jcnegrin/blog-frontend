@@ -14,7 +14,7 @@ export class MenuComponent implements OnInit {
 
   ngOnInit(): void {
     const logged = this.authService.getSessionToken();
-    if (logged) {
+    if (logged !== undefined) {
       this.logged = true;
     }
   }

@@ -2,13 +2,13 @@
     <mat-card class="container">
       <mat-form-field appearance="fill">
         <mat-label>E-mail</mat-label>
-        <input matInput>
+        <input matInput [formControl]="email">
       </mat-form-field>
       <mat-form-field appearance="fill">
         <mat-label>Password</mat-label>
-        <input type="password" matInput>
+        <input type="password" matInput [formControl]="password">
       </mat-form-field>
-      <button mat-raised-button color="primary">Sign in</button>
+      <button mat-raised-button color="primary" (click)="login()">Sign in</button>
       <br>
       <p>Don't you have an account? <a routerLink="/signup">Sign up</a></p>
     </mat-card>

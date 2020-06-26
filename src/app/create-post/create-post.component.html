@@ -2,11 +2,11 @@
   <div class="title">
     <mat-form-field appearance="outline">
       <mat-label>Title</mat-label>
-      <input matInput>
+      <input matInput [formControl]="title">
     </mat-form-field>
   </div>
   <div class="file">
-    <p-fileUpload name="demo[]" url="./upload.php" (onUpload)="onUpload($event)"
+    <p-fileUpload name="demo[]" customUpload="true" (uploadHandler)="onUpload($event)"
           multiple="false" fileLimit="1" accept="image/*" maxFileSize="1000000">
       <ng-template pTemplate="content">
           <ul *ngIf="uploadedFiles.length">
